@@ -1,0 +1,87 @@
+# Ansible Automation Platform on GCP minimum required IAM roles
+
+## Foundation Roles
+
+On top of the below roles, the user must be licensed to install the desired AAP subscriptions as well.
+
+- cloudsql
+  - cloudsql.databases.create
+  - cloudsql.databases.delete
+  - cloudsql.databases.get
+  - cloudsql.databases.list
+  - cloudsql.instances.connect
+  - cloudsql.instances.create
+  - cloudsql.instances.delete
+  - cloudsql.instances.get
+  - cloudsql.instances.list
+  - cloudsql.instances.login
+- compute
+  - compute.addresses.create
+  - compute.addresses.get
+  - compute.addresses.list
+  - compute.addresses.use
+  - compute.forwardingRules.create
+  - compute.forwardingRules.get
+  - compute.globalAddresses.get
+  - compute.globalOperations.get
+  - compute.instances.delete
+  - compute.instances.get
+  - compute.instances.getGuestAttributes
+  - compute.instances.list
+  - compute.projects.get
+  - compute.projects.setCommonInstanceMetadata
+  - compute.regionBackendServices.create
+  - compute.regionBackendServices.get
+  - compute.regionBackendServices.update
+  - compute.regionBackendServices.use
+  - compute.regionHealthChecks.create
+  - compute.regionHealthChecks.get
+  - compute.regionHealthChecks.useReadOnly
+  - compute.regionOperations.get
+  - compute.regionTargetHttpProxies.create
+  - compute.regionTargetHttpProxies.get
+  - compute.regionTargetHttpProxies.use
+  - compute.regionUrlMaps.create
+  - compute.regionUrlMaps.get
+  - compute.regionUrlMaps.use
+  - compute.regions.list
+  - compute.zoneOperations.get
+- deploymentmanager
+  - deploymentmanager.deployments.create
+  - deploymentmanager.deployments.delete
+  - deploymentmanager.deployments.get
+  - deploymentmanager.deployments.list
+  - deploymentmanager.manifests.get
+  - deploymentmanager.operations.get
+  - deploymentmanager.resources.list
+- iam
+  - iam.serviceAccounts.actAs
+- logging
+  - logging.logEntries.create
+- monitoring
+  - monitoring.metricDescriptors.get
+  - monitoring.timeSeries.create
+- resourcemanager
+  - resourcemanager.projects.get
+- runtimeconfig
+  - runtimeconfig.configs.list
+  - runtimeconfig.variables.create
+  - runtimeconfig.variables.get
+  - runtimeconfig.variables.list
+  - runtimeconfig.variables.update
+- secretmanager
+  - secretmanager.secrets.create
+  - secretmanager.secrets.delete
+  - secretmanager.secrets.get
+  - secretmanager.secrets.list
+  - secretmanager.versions.access
+  - secretmanager.versions.add
+  - secretmanager.versions.destroy
+  - secretmanager.versions.disable
+  - secretmanager.versions.get
+  - secretmanager.versions.list
+- servicenetworking
+  - servicenetworking.operations.get
+  - servicenetworking.services.addPeering
+- serviceusage
+  - serviceusage.services.list
